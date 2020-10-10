@@ -20,6 +20,9 @@ public class DestroyOutOfBoundsX : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        {
+            Debug.Log("GAMEOVER");
+        }
 
     }
 }
