@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetKeyDown(KeyCode.Space))
+       if(Input.GetKeyDown(KeyCode.Space) && isGrounded == true && !gameOver) 
        {
            isGrounded = false;
            playerAudio.PlayOneShot(jumpSound, 1.0f);

@@ -24,9 +24,10 @@ public class PlayerController : MonoBehaviour
         hInput = Input.GetAxis("Horizontal");
         fInput = Input.GetAxis("Vertical");
 
-        // Move the capsule forward base on vertical input
+        // Move the Player forward base on vertical input
         transform.Translate(Vector3.forward * Time.deltaTime * fInput * speed);
-        //Rotated the capsule left and right based on horizontal input
+        //Rotated the Player left and right based on horizontal input
         transform.Rotate(Vector3.up * Time.deltaTime * hInput * turnSpeed);
     }
 }
+
