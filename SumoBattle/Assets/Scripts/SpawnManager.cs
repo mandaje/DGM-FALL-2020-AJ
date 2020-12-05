@@ -16,6 +16,7 @@ public class SpawnManager : MonoBehaviour
    void Start()
     {      
        SpawnEnemyWave(waveNumber);
+       Instantiate(powerUpPrefab, GenerateSpawnPosition(), powerUpPrefab.transform.rotation);
     }
      
    void Update()
@@ -42,9 +43,9 @@ public class SpawnManager : MonoBehaviour
 
     void SpawnEnemyWave(int enemiesToSpawn)
     {
-       float i;
+       int i;
 
-       for(i = 0; i < 3; i++)
+       for(i = 0; i < enemiesToSpawn; i++)
        {
           print("Enemies =" +i);
        }
